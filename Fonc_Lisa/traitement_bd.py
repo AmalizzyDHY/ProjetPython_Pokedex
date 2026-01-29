@@ -28,10 +28,17 @@ print(pokedex[n_pkmn_mystere])
 while not win:
     # L'utilisateur choisis un pokemon, pour deviner le pokemon mystère
     n_pkmn_guest = int(input("Try : "))
-    print(pokedex[n_pkmn_guest])
+    # print(pokedex[n_pkmn_guest])
 
     if n_pkmn_guest == n_pkmn_mystere :
         print("Tu as gagner ! C'était bien " + str(pokedex[n_pkmn_mystere][1]))
         win = 1
     else :
         print("Essaie encore")
+        print("ID               : " + str(pokedex[n_pkmn_guest][0]) + " - " + str(pokedex[n_pkmn_guest][0] == pokedex[n_pkmn_mystere][0]))
+        print("Name             : " + str(pokedex[n_pkmn_guest][1]) + " - " + str(pokedex[n_pkmn_guest][1] == pokedex[n_pkmn_mystere][1]))
+        print("Type 1           : " + str(pokedex[n_pkmn_guest][36]) + " - " + str(pokedex[n_pkmn_guest][36] == pokedex[n_pkmn_mystere][36]))
+        print("Type 2           : " + str(pokedex[n_pkmn_guest][37]) + " - " + str(pokedex[n_pkmn_guest][37] == pokedex[n_pkmn_mystere][37]))
+        print("Height Meters    : " + str(pokedex[n_pkmn_guest][28]) + " - " + str(pokedex[n_pkmn_guest][28] == pokedex[n_pkmn_mystere][28]))
+        print("Weight Kilograms : " + str(pokedex[n_pkmn_guest][30]) + " - " + str(pokedex[n_pkmn_guest][30] == pokedex[n_pkmn_mystere][30]))
+        print("Generation       : " + str(pokedex[n_pkmn_guest][40]) + " - " + str(pokedex[n_pkmn_guest][40] == pokedex[n_pkmn_mystere][40]))
