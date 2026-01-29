@@ -10,7 +10,7 @@ import random
 pokedex = [] # array
 win = 0
 
-with open("Fonc_Lisa/pokemon_data.csv", newline='', encoding="utf-8") as fichier:
+with open("database/pokemon_data.csv", newline='', encoding="utf-8") as fichier:
     test = csv.reader(fichier, delimiter=",")
     for ligne in test:
         #print(ligne)
